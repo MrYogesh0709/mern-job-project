@@ -1,9 +1,10 @@
 import dotenv from "dotenv";
+dotenv.config();
+
 import connectDB from "./db/connect.js";
 import Job from "./model/Job.js";
-dotenv.config();
+
 import { readFile } from "fs/promises";
-import { URL } from "url";
 
 const start = async () => {
   try {
